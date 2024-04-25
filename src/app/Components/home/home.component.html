@@ -1,0 +1,144 @@
+<app-header></app-header>
+
+<body>
+   <div class="flexbox">
+  
+    <div class="homeimg">
+        <div class="home-card" [@fadeInOut]>
+            <div>
+                <h1 class="hc1">
+                    Your Daily Dish
+                </h1><br>
+                <h1 class="hc2">
+                    A <p class="hc4"> Food </p> Journey
+                </h1><br>
+                <h3 class="hc3">Discover delicious recipes for every occasion at <b style="color:#b75f55;">FOOD.IO</b>.
+                    From comforting classics to innovative dishes, our curated collection
+                    has something for everyone. Join our cooking community and embark on a
+                    culinary adventure today!
+                </h3>
+            </div>
+            <div *ngIf="login">
+                <button>Sign Up</button>
+                <p style="color: gray;">Don't have an account? <a [routerLink]=""
+                        style="color: #b75f55; text-decoration: underline; cursor: pointer;">Login</a></p>
+            </div>
+           
+        </div>
+        <div class="maingrid">
+            <div class="firstclm">
+                <div class="firstimg" [@fadeInOut]>
+                    <img src="../../../assets/loginimg.jpg">
+                </div>
+               <div class="firstrow">
+                <div class="secimg" [@fadeInOut1]>
+                    <img src="../../../assets/c1.jpg">
+                </div>
+                <div class="thirdimg" [@fadeInOut]>
+                    <img src="../../../assets/icecream.jpg">
+                </div>
+               </div>
+            </div>
+            <div class="seconclm">
+                <div class="firstrow">
+                    <div class="secimg1" [@fadeInOut]>
+                        <img src="../../../assets/home2.jpg">
+                    </div>
+                    <div class="thirdimg1" [@fadeInOut1]>
+                        <img src="../../../assets/smoothe.jpg">
+                    </div>
+                </div>
+                <div class="firstimg1" [@fadeInOut1]>
+                    <img src="../../../assets/frenchfries.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
+   <div data-aos="zoom-out-up">
+    <div class="part2">
+        <div class="img">
+            <img src="../../../assets/share recipe (1).png" alt="image1">
+        </div>
+        <div class="share">
+            <h1>Share Your</h1>
+            <h1 class="sh2">Recipe</h1>
+        </div>
+
+    </div>
+   
+    <div class="shrdetails">
+        <span>Share your culinary masterpiece with the world! Whether it's a family
+            heirloom or a newly discovered fusion creation,we invite you to showcase
+            your recipe here. Inspire others with your creativity and passion for
+            cooking by sharing your unique flavors, techniques, and stories behind each
+            dish. Let's spread the joy of cooking together!</span>
+    </div>
+    <div class="button-container">
+        <button class="button signup-button" [routerLink]="['/','add']">Create New Recipe</button>
+    </div>
+</div>
+
+    <div class="explore">
+        <span>Explore Recipe</span>
+        
+    </div>
+    <span class="viewmore">View More</span>
+    <app-create-new-recipe></app-create-new-recipe>
+    <div class="touch">
+        <span class="c1">Let's Stay in Touch!</span>
+        <span class="c2">Join our newsletter,so that we reach out to you with our news and offers. </span>
+        <div class="touch2">
+            <div class="input-group">
+                <input type="email" placeholder=" Enter your email"><br>
+                <button type="submit">Subscribe</button>
+              </div>
+        </div>
+    </div>
+   <div class="pop"  data-aos="zoom-out-up">
+    <span class="popular">Popular Categories</span>
+    <div class="team-members">
+       <div class="first">
+        <div class="team-member">
+            <img src="../../../assets/c1.jpg" alt="Team Member 1">
+            <p>Breakfast Recipe</p>
+        </div>
+        <div class="team-member">
+            <img src="../../../assets/c2.jpg" alt="Team Member 2">
+            <p>Lunch Recipe</p>
+        </div>
+        <div class="team-member">
+            <img src="../../../assets/c3.jpg" alt="Team Member 3">
+            <p>Dinner Recipe</p>
+        </div>
+        <div class="team-member">
+            <img src="../../../assets/c1.jpg" alt="Team Member 3">
+            <p>Pizza Recipe</p>
+        </div>
+       </div>
+    
+        <div class="second">
+            <div class="team-member">
+                <img src="../../../assets/c1.jpg" alt="Team Member 1">
+                <p>Salad Recipe</p>
+            </div>
+            <div class="team-member">
+                <img src="../../../assets/c2.jpg" alt="Team Member 2">
+                <p>Smoothie Recipe</p>
+            </div>
+            <div class="team-member">
+                <img src="../../../assets/c3.jpg" alt="Team Member 3">
+                <p>Pasta Recipe</p>
+            </div>
+            <div class="team-member">
+                <img src="../../../assets/c2.jpg" alt="Team Member 3">
+                <p>Chinese Recipe</p>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="brandimg"><img src="../../../assets/alllogofinal.png" alt="brandlogo"></div>
+</body>
+<app-footer></app-footer>

@@ -1,0 +1,82 @@
+<app-header></app-header>
+<div class="maincard">
+    <div class="signupimg">
+        <img src="../../../assets/home image.jpg">
+    </div>
+    <div class="signupdata">
+        <div class="head">
+            <p>Want to join our Family</p>
+        </div>
+        <div class="container">
+            <form [formGroup]="signinform" >
+                <div class="form-group">
+                    <input type="text" id="username" name="username" class="username" placeholder="Enter Your Name"
+                        style="padding-left: 40px;" formControlName="username"  
+                        [ngClass]="{'is-invalid': signinform.get('username')?.touched && signinform.get('username')?.invalid}" required>
+                       
+                    <ion-icon name="person-outline" class="usericon"></ion-icon>
+
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email"
+                        style="padding-left: 40px;" formControlName="email"  
+                        email
+                        required
+                        [ngClass]="{'is-invalid': signinform.get('email')?.touched && signinform.get('email')?.invalid}">
+                    <ion-icon name="mail-outline" class="emailicon"></ion-icon>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Enter your password"
+                        class="password" style="padding-left: 40px;" formControlName="password"
+                        [ngClass]="{'is-invalid': signinform.get('password')?.touched && signinform.get('password')?.invalid}">
+                        <ion-icon name="lock-closed-outline" class="lockicon"></ion-icon>
+                        
+                    
+                </div>
+                <div class="form-group">
+                    <input type="password" id="repeat-password" name="repeat-password" class="reset-password"
+                        style="padding-left: 40px;" placeholder="Repeat Password" formControlName="repeatpassword">
+                    <ion-icon name="lock-closed-outline" class="lockicon2"></ion-icon>
+                </div>
+            </form>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="cb1" name="cb1" class="check">
+            <label for="cb1" class="checktext">I agree to the <p class="checktext1">terms & policy</p></label>
+        </div>
+        <div class="button-container main" >
+            <button class="button signup-button" [routerLink]="['/','login']" [disabled]="signinform.invalid" (click)="onSubmit()">Sign Up</button>
+        </div>
+        <div class="otheroption">
+            <p>Or you can join with</p>
+            <div class="options">
+                <div class="option1">
+                    <img src="../../../assets/google.svg">
+                    <p>Sign in with Google</p>
+                </div>
+                <div class="option2">
+                    <img src="../../../assets/facebook.svg">
+                    <p>Sign in with Facebook</p>
+                </div>
+            </div>
+        </div>
+        <div class="gotologin">
+            <p class="p1">Already have an account?</p>
+            <p class="p2" [routerLink]="['/','login']">Login</p>
+        </div>
+        <div class="logo">
+            <div class="icon">
+                <ion-icon name="restaurant"></ion-icon>
+            </div>
+            <div class="header1">
+                <span class="hed1">FOOD.</span>
+                <span class="hed2">IO</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div style="margin-top: 10%;"> </div>
+<app-footer></app-footer>

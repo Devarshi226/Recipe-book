@@ -1,0 +1,53 @@
+<nav id="navbar">
+    <div>
+        <div class="header" >
+            <div class="icon">
+                <ion-icon name="restaurant"></ion-icon>
+            </div>
+            <div class="header1">
+                <span class="hed1">FOOD.</span>
+                <span class="hed2">IO</span>
+            </div>
+            <div class="hamburger-menu" (click)="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="ul-list" [ngClass]="{ 'active': menuOpen }">
+                <li class="navbar-item first">
+                    <span routerLink="/">Home</span>
+                </li>
+                <li class="navbar-item">
+                    <span routerLink="/allrecipe">Recipe</span>
+                </li>
+                <li class="navbar-item">
+                    <span [routerLink]="['/','add']">Add Recipe</span>
+                </li>
+                <li class="navbar-item">
+                    <span [routerLink]="['/','aboutus']">About us</span>
+                </li>
+                <li class="navbar-item">
+                    <span [routerLink]="['/','shopping']">Shopping</span>
+                </li>
+              
+                <div class="button-container main2">
+                    <button class="button login-button" routerLink="login">Login</button>
+                    <button class="button signup-button" routerLink="login">Sign Up</button>
+                  </div>  
+              
+            </ul>
+            <div class="button-container main" *ngIf="isLogin">
+                <button class="button login-button" [routerLink]="['/','login']" >Login</button>
+                <button class="button signup-button" [routerLink]="['/','signup']" >Sign Up</button>
+              </div> 
+              <div class="button-container main" *ngIf="!isLogin">
+                <img [src]='imgUrl' class="circular-image">
+              <div class="logout-button">
+                <span  (click)="onSignout()" class="material-symbols-outlined logout" > logout</span>
+              </div>
+              </div>                          
+        </div>
+       
+    </div>
+</nav>
+

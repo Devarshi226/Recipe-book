@@ -1,0 +1,167 @@
+.maincard {
+    width: 800px;
+    height: 550px;
+    padding: 20px;
+    margin-left: 350px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    font-family: "Prompt", sans-serif;
+  }
+  .signupimg img{
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+  }
+  .head{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: -15px;
+  }
+  .container {
+    width: 400px;
+    height: 80px;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .signupdata{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-left: 20px;
+    position: relative;
+    
+    input{
+        border: none;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+    input:focus {
+        border-bottom: 3px solid #b75f55; 
+        outline: none;
+    }
+ 
+  }
+  .forgot{
+    font-size: 12px;
+    color: #b75f55;
+    margin-left: 290px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .username, .email, .password, .reset-password{
+    // position: relative;
+    // display: inline-block;
+    height: 40px;
+   
+  }
+
+ .usericon, .emailicon, .lockicon, .lockicon2 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -370px;
+    color: gray;
+    width: 20px;
+    height: 20px;
+ }
+
+
+  .signup-button {
+    padding: 10px 20px;
+    width: 130px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color:#b75f55;
+    color: white;
+    margin-left: 25px;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .signup-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .otheroption p{
+    font-size: 12px;
+    color: grey;
+    margin-left: 25px;
+    margin-top: 60px;
+  }
+  .options{
+    display: flex;
+    flex-direction: row;
+   margin-left: 25px;
+   justify-content: space-between;
+  }
+  .option1, .option2{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    // padding: 2px;
+    width: 180px;
+    height: 35px;
+    border-radius: 8px;
+  }
+  .option1 img, .option2 img{
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+   
+  }
+  .option1 p, .option2 p {
+    margin-top: 2px;
+    margin-left: 20px;
+    font-size: 14px;
+    padding-top: 7px;
+    
+  }
+  .gotologin{
+    display: flex;
+    flex-direction: row;
+  }
+  .p1{
+    font-size: 15px;
+    color: gray;
+    margin-left: 25px;
+  }
+  .p2{
+    font-size: 15px;
+    color: #b75f55;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 290px;
+    margin-top: 90px;
+  }
+  .header1{
+    display: flex;   
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+.icon{
+    font-size: 22px;
+}
+.hed1{
+    text-decoration: underline;
+}
+.hed2{
+    color: #c88881;
+    text-decoration: underline;
+}

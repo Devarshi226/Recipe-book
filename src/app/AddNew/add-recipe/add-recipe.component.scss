@@ -1,0 +1,292 @@
+.frow {
+  display: flex;
+  flex-direction: row;
+}
+.recipe{
+  font-family: "Prompt", sans-serif;
+  
+ 
+}
+.fcol {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+
+  padding: 1rem 8rem 1rem 8rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.saveBtn {
+  height: 2.3rem;
+  width: 6.5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #B66055;
+}
+
+.form {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+
+  .pmrg {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 40px;
+    width: 400px;
+    font-size: 17px;
+  }
+
+  input:focus {
+    outline: 1px solid #B66055;
+  }
+}
+
+.mrg {
+  margin-bottom: 1rem;
+  margin-left: -20px;
+}
+
+.pos {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+.food {
+  height: 16rem;
+  width: 26rem;
+
+  img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.setBtn {
+  top: 3%;
+  left: 2%;
+  position: absolute;
+  width: 6rem;
+  color: #B66055;
+  border: 1px solid #B66055;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.changeBtn {
+  top: 3%;
+  left: 35%;
+  position: absolute;
+  width: 7rem;
+  color: #B66055;
+  border: 1px solid #B66055;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.delete {
+  cursor: pointer;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  text-align: center;
+  height: 1.6rem;
+  width: 1.8rem;
+  border: 1px solid #B66055;
+  border-radius: 5px;
+
+  span {
+    color: #B66055;
+  }
+}
+
+.addPic {
+  cursor: pointer;
+  //   position: relative;
+  //   overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  background-color: rgb(237, 237, 237);
+  height: 5rem;
+  width: 6rem;
+  margin-right: 15px;
+
+  span {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #B66055;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.fileInput {
+  cursor: pointer;
+  position: absolute;
+  height: 5rem;
+  width: 6rem;
+  object-fit: cover;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cover {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #B66055;
+  border-radius: 5px;
+  background-color: rgb(237, 237, 237);
+  height: 5rem;
+  width: 6rem;
+
+  img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .p {
+    position: absolute;
+    top: 0;
+    padding-left: 5px;
+    border-radius: 0 0 5px 0;
+    width: 2.5rem;
+    color: white;
+    background-color: #B66055;
+
+    p {
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+}
+
+label {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  color: gray;
+}
+
+.ing {
+  margin-bottom: 10px !important;
+  margin-left: 20px;
+}
+
+.inpArry {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.add {
+  cursor: pointer;
+  color: #B66055;
+  margin: 0;
+  margin-left: 20px
+}
+
+.edit {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+.step {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.step-div {
+  height: 3rem;
+  width: 4rem;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  background-color: rgb(237, 237, 237);
+
+  span {
+    margin-top: 10px;
+  }
+}
+
+.info {
+    margin: 4px 0 0 12px;
+}
+
+.step-disc {
+    width: 35%;
+    margin-bottom: 15px;
+}
+
+.stepmrg {
+    margin-left: 34rem;
+}
+.mrg2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.pad {
+    margin-left: -50px;
+}
+
+.rowInp {
+
+    input {
+        width: 10rem;
+        margin-right: 10px;
+    }
+}
+
+.sel-div {
+    margin-right: 10.7rem;
+    margin-left: -110px;
+}
+
+select {
+    height: 2rem;
+    width: 10rem;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+@media (max-width: 1024px) {
+  .stepmrg {
+    margin-left: 18.5rem;
+}
+.step-disc {
+  width: 50%;
+  margin-bottom: 15px;
+}
+}

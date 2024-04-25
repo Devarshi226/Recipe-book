@@ -1,0 +1,557 @@
+.home-card {
+    background-color: rgba( 252,200,193, 0.5);
+    width: 800px;
+    height: 450px;
+    padding: 30px 32px;
+    backdrop-filter: blur(10px);
+    margin-top: 80px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 60px;
+    font-family: "Prompt", sans-serif;
+    
+}
+.homeimg{
+  display: flex;
+  flex-direction: row;
+}
+.maingrid{
+  display: flex;
+  flex-direction: row;
+}
+.firstclm{
+  display: flex;
+  flex-direction: column;
+}
+.firstrow{
+  display: flex;
+  flex-direction: row;
+}
+.firstimg img{
+  width: 300px;
+  height: 350px;
+  margin-left: 10px;
+  margin-top: 80px;
+  object-fit: cover;
+}
+.secimg img{
+  width: 200px;
+  height: 140px;
+  margin-left: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+.thirdimg img{
+  width: 90px;
+  height: 140px;
+  margin-top: 10px;
+  margin-left: 10px;
+  object-fit: cover;
+}
+.firstimg1 img{
+  width: 290px;
+  height: 350px;
+  margin-left: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.secimg1 img{
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  margin-top: 80px;
+  object-fit: cover;
+}
+.thirdimg1 img{
+  width: 130px;
+  height: 140px;
+  margin-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.hc1, .hc2 {
+    font-weight: bold;
+    /* text-align: center; */
+}
+.hc1 {
+    font-size: 2.5rem; 
+    color: black;
+    // margin-top: 100px;
+}
+.hc2 {
+    font-size: 2.5rem;
+    color: black;
+    display: flex;
+    margin-top: -40px;
+}
+.hc4 {
+    font-size: 2.5rem;
+    color: #b75f55;
+    margin-top: -1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hc3{
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.home-card button {
+    background-color: #b75f55;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.home-card button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+img{
+    margin-top: 100px;
+    margin-left: 150px;
+    height: 320px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.part2{
+    display: flex;
+    flex-direction: row;
+}
+.share{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    font-size: larger;
+    font-family: "Prompt", sans-serif ;
+    margin-left: 340px;
+}
+.sh2{
+    margin-left: 10px;
+    color: #b75f55;
+}
+.shrdetails{
+    margin-left: 550px;
+    margin-top: -240px;
+    margin-right: 50px;
+    font-size: 1.1rem;
+    color: gray;
+    font-family: "Prompt", sans-serif;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 260px;
+  }
+  .button {
+    padding: 15px 30px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-left: 130px;
+  }
+
+  .signup-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color:#b75f55;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .signup-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .explore{
+    margin-top: 180px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: "Prompt", sans-serif ;
+    font-weight: bold;
+  }
+  .viewmore{
+    
+    margin-left: 1240px;
+    font-size: 20px;
+    font-family: "Prompt", sans-serif ;
+    font-weight: bold;
+    color: #b75f55;
+  }
+  .touch{
+    background-color: #fde3e0;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Prompt", sans-serif ;
+    padding-bottom: 40px;
+  }
+  .c1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .c2{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+ 
+  .input-group {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+  }
+  
+  .input-group input[type="email"] {
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px; 
+    padding-left: 30px; 
+    background-repeat: no-repeat;
+    background-position: 8px 50%; 
+  }
+  
+  .input-group button {
+    margin-left: 20px;
+    width: 120px;
+    padding: 10px 20px;
+    background-color: #b75f55;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .input-group button:hover {
+    background-color: #d36b5f;
+  }
+  .pop{
+    padding-bottom: 140px;
+  }
+  .popular{
+    margin-top: 180px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: "Prompt", sans-serif ;
+    font-weight: bold;
+  }
+  .first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  .second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -60px;
+  }
+  .team-members {
+    display: flex;
+    flex-direction: column; 
+    width: 70%;
+    font-family: "Prompt", sans-serif ;
+    font-size: 20px;
+    margin-left: 170px;
+    margin-top: -40px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 100px;
+    object-fit: cover;
+}
+
+.team-member p {
+    text-align: center;
+    margin-left: 100px;
+}
+.brandimg{
+    margin-left: 225px;
+    margin-bottom: 100px;
+ 
+
+    img{
+        height: 45px;
+        width: 715px;
+        margin-top: -60px;
+    }
+
+} 
+
+@media (max-width: 1024px) {
+  .share{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    font-size: larger;
+    font-family: "Prompt", sans-serif ;
+    margin-left: 140px;
+}
+img{
+  margin-top: 100px;
+  margin-left: 100px;
+  height: 320px;
+  width: 280px;
+  border-radius: 10px;
+}
+.shrdetails{
+  margin-left: 450px;
+  
+}
+.button {
+  width: 230px;
+  margin-top: 40px;  
+}
+.explore{
+  margin-top: 150px;
+  margin-left: 80px;
+  font-size: 35px;
+  font-family: "Prompt", sans-serif ;
+  font-weight: bold;
+}
+.viewmore{   
+  margin-left: 820px;
+  font-size: 20px;
+  font-family: "Prompt", sans-serif ;
+  font-weight: bold;
+  color: #b75f55;
+}
+.popular{
+  margin-top: 150px;
+  margin-left: 80px;
+  font-size: 35px;
+}
+.team-members { 
+  width: 40%;
+  font-size: 20px;
+  margin-left: -30px;
+  margin-top: -40px;
+}
+.brandimg{
+  margin-left: 60px;
+  margin-bottom: 100px;
+
+
+  img{
+      height: 45px;
+      width: 715px;
+      margin-top: -60px;
+  }
+
+} 
+.home-card { 
+  margin-left: 30px;
+}
+
+}
+
+@media (max-width: 432px) {
+  .home-card {
+    width: 340px;
+    height: 450px;
+    margin-top: 30px;
+    margin-left: 20px;  
+}
+.maingrid{
+ display: none;
+}
+.hc1 {
+    font-size: 2rem; 
+    color: black;
+    text-align: center;
+    // margin-top: 100px;
+}
+.hc2 {
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    margin-left: 47px;
+    margin-top: -40px;
+}
+.hc4 {
+    font-size: 2rem;
+    color: #b75f55;
+    margin-top: -1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hc3{
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+    margin-top: -20px;
+}
+.part2{
+  display: flex;
+  flex-direction: column;
+}
+.share{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  font-size: large;
+  font-family: "Prompt", sans-serif ;
+  margin-left: 45px;
+}
+
+img{
+  margin-top: 60px;
+  margin-left: 30px;
+  height: 320px;
+  width: 355px;
+  border-radius: 10px;
+}
+.shrdetails{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+.button {
+  padding: 7px 15px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color:#b75f55;
+  color: white;
+  font-weight: bold;
+}
+.explore{
+  margin-top: 70px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.viewmore{ 
+  display: none;
+}
+.touch{
+  background-color: #fde3e0;
+  width: 96%;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Prompt", sans-serif ;
+  padding-bottom: 40px;
+}
+.c1{
+  text-align: center;
+  padding-top: 40px;
+  font-size: 23px;
+  font-weight: bold;
+}
+.c2{
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.input-group {
+  margin-top: 40px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+}
+.input-group input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px; 
+  text-align: center;
+  padding-left: 30px; 
+  background-repeat: no-repeat;
+  background-position: 8px 50%; 
+}
+
+.input-group button {
+  padding-left: 30px;
+  margin-left: 5px;
+  width: 290px;
+  padding: 10px;
+  background-color: #b75f55;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background-color: #d36b5f;
+}
+.popular{
+  margin-top: 70px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.second{
+  display: none;
+}
+.team-members { 
+ 
+  font-size: 15px;
+ 
+}
+.first{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 40%;
+}
+}

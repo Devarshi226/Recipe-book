@@ -1,0 +1,189 @@
+<app-header></app-header>
+<div class="recipe">
+
+    <hr>
+    <form action="" [formGroup]="recipeForm">
+
+        <div class="title frow space">
+            <h1>Create new recipe</h1>
+            <button class="saveBtn" (click)="onSubmit()">Save</button>
+        </div>
+
+        <hr>
+
+
+        <div class="form fcol">
+
+            <div class="mrg">
+                <p class="pmrg">Recipe Title:</p>
+                <input type="text" formControlName="title" style="padding-left: 10px;" placeholder="Title">
+            </div>
+
+            <div class="mrg">
+                <p class="pmrg">Recipe Image:</p>
+                <div class="pos">
+                    <div class="food">
+                        <img src="{{imgUrl}}" alt="">
+                    </div>
+                    <button class="setBtn">Set as cover</button>
+                    <button class="changeBtn">Change Image</button>
+                    <div class="delete">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </div>
+                </div>
+                <div class="frow">
+
+                    <div class="addPic fcol">
+                        <input type="file" class="fileInput" (change)="onFileSelected($event)" formControlName="img">
+                        <span class="material-symbols-outlined">
+                            photo_camera
+                        </span>
+                        <p>Add Photo</p>
+                    </div>
+
+
+                    <div class="cover fcol">
+                        <img src="{{imgUrl}}" alt="">
+                        <div class="p">
+                            <p>Cover</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mrg fcol">
+                <p class="pmrg">Discription:</p>
+                <input type="text" #descriptionInput (input)="onInputChange(descriptionInput.value)" maxlength="100"
+                    formControlName="discription" style="padding-left: 10px" placeholder="Discription">
+                <label>{{count}} / 100</label>
+            </div>
+
+            <div class="mrg">
+                <p class="pmrg ing">Ingredients:</p>
+                <div formArrayName="details">
+                    <div *ngFor="let auth of authors.controls; let i=index;">
+                        <div appearance="fill" [formGroupName]="i" class="frow">
+                            <input class="inpArry" placeholder="Ingredients" type="text" name="details"
+                                formControlName="ingredians">
+                            <span class="material-symbols-outlined" style="color: #B66055; cursor: pointer" (click)="RemoveAuthor(i)">
+                                close
+                            </span>
+                        </div>
+                    </div>
+                    <p (click)="AddMoreAuthor()" class="add">+ Add</p>
+                </div>
+            </div>
+
+            <div class="mrg stepmrg">
+                <p class="pmrg">Instruction:</p>
+                <p class="edit">Tap to edit</p>
+                <p class="step">Step 1 (Example)</p>
+                <div class="frow">
+                    <div class="step-div">
+                        <span class="material-symbols-outlined">
+                            photo_camera
+                        </span>
+                    </div>
+                    <div class="step-disc">
+                        <p class="info">In a medium bowl, mix together beans, salsa, taco, seasoning</p>
+                    </div>
+                </div>
+
+                <p class="step">Step 2 (Example)</p>
+
+                <div class="frow">
+                    <div class="step-div">
+                        <span class="material-symbols-outlined">
+                            photo_camera
+                        </span>
+                    </div>
+                    <div class="step-disc">
+                        <p class="info"> just like cooking…life has a lot of similarities. For instance,
+                            while some people like to follow the recipe to the core, others like to experiment with the
+                            ingredients
+                            creating their unique take on something that might have been passed down from generation to
+                            generation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mrg">
+                    <div formArrayName="step">
+                        <div *ngFor="let auth of authors1.controls; let i=index;">
+                            <div appearance="fill" [formGroupName]="i" class="frow">
+                                <input class="inpArry" placeholder="Write instruction" type="text" name="step"
+                                    formControlName="instruction">
+                                <span class="material-symbols-outlined" style="color: #B66055; cursor: pointer" (click)="RemoveAuthor1(i)">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <p (click)="AddMoreAuthor1()" class="add">+ Add</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="mrg">
+                <p class="mrg2">Servings:</p>
+                <input type="text" style="padding-left: 10px;" placeholder="#" formControlName="serving">
+                <label style="display: flex; justify-content: flex-start">How many portion does this recipe
+                    make?</label>
+            </div>
+
+            <div class="pad">
+
+                <div class="mrg">
+
+                    <p class="mrg2">Cooking Time:</p>
+                    <div class="frow rowInp">
+                        <input type="text" placeholder="Hours 0" style="padding-left: 10px;" formControlName="cookHour">
+                        <input type="text" placeholder="Minutes 0" style="padding-left: 10px;"
+                            formControlName="cookMinute">
+                    </div>
+                    <label style="display: flex; justify-content: flex-start">How long does it take to cook this
+                        recipe?</label>
+
+                </div>
+
+                <div class="mrg">
+
+                    <p class="mrg2">Prep Time:</p>
+                    <div class="frow rowInp">
+                        <input type="text" placeholder="Hours 0" style="padding-left: 10px;" formControlName="prepHour">
+                        <input type="text" placeholder="Minutes 0" style="padding-left: 10px;"
+                            formControlName="prepMinute">
+                    </div>
+                    <label style="display: flex; justify-content: flex-start">How long does it take to prepare this
+                        recipe?</label>
+
+                </div>
+
+            </div>
+
+            <div class="mrg sel-div">
+
+                <p class="mrg2">Cuisine:</p>
+                <select formControlName="cuisine">
+                    <option value="Italian">Italian</option>
+                    <option value="french">French</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="indian">Indian</option>
+                    <option value="russian">Russian</option>
+                </select>
+
+
+            </div>
+
+
+        </div>
+
+    </form>
+
+</div>
+<div style="margin-top: 5%;"> </div>
+<app-footer></app-footer>

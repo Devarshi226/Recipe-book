@@ -1,0 +1,745 @@
+.main{
+    font-family:"Prompt", sans-serif;
+   
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+
+}
+.main2{
+    border: none;
+    border-right: 1px solid lightgrey;
+    // padding-left: 10px;
+    height: 2000px;
+    // margin-right: 430px;
+}
+.path{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.p1{
+    color: gray;
+}
+.p2{
+    color: black;
+    margin-left: 8px;
+}
+.recpname{
+    margin-left: 45px;
+}
+.name{
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 40%;
+}
+.alldetails{
+    display: flex;
+    flex-direction: row;
+}
+.alldetails1, .alldetails2{
+  display: flex;
+  flex-direction: row;
+}
+.authorimg, .date, .cmt, .save, .stars{
+    width:21px; 
+    height:21px;
+    color:#b75f55;  
+}
+.authanddate, .cmtandsave{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20PX;
+}
+.stars{
+    margin-top: 1px;
+}
+.stars2{
+    width:21px; 
+    height:21px;
+    color:#b75f55;
+    margin-top: 1px; 
+    margin-left: 30px;
+}
+.strtext{
+    color: gray;
+    font-size: 10px;
+    margin-left: 50px;
+}
+.authimg, .dateimg, .comtimg, .saveimg, .starimg, .bkmark, .shrbtn{
+    display: flex;
+    flex-direction: row;
+}
+.authname, .datename, .cmtdata, .savedata {
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.bookmark{
+    width:25px; 
+    height:25px;
+    color:#b75f55; 
+    border: 1px solid lightgrey; 
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 280px;
+    margin-top: -4px;
+}
+.share{
+    width:28px; 
+    height:28px;
+    color:#b75f55; 
+    margin-left: 20px;
+}
+.hr{
+    width: 90%;
+    border: 1px solid rgb(234, 232, 232);
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.saladimg img{
+    width: 680px;
+    height: 480px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.saladimg1 img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.img-card1{
+    display: flex;
+    flex-direction: row;
+}
+.ntrcard {
+  
+    background-color: rgba( 225,225, 225, 0.7);
+    width: 250px;
+    height: 350px;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    margin-left: 120px;
+    font-family: "Prompt", sans-serif;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+}
+.recent{
+    margin-left: 120px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.header{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.ntrdetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ntrname{
+    color: rgb(125, 124, 124);
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: -1px;
+}
+.ntrvalue{
+   font-weight: bold;
+   margin-right: 25px;
+   margin-top: -1px;
+}
+.hr2{
+    border: 1px solid lightgray;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.prep{
+    display: flex;
+    flex-direction: row;
+    margin-left:330px;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 25px;
+}
+.preparation{
+    display: flex;
+    flex-direction: column;
+}
+.hr3{
+    border: none;
+    border-right: 3px solid darkgrey;
+    padding-left: 10px;
+    height: 35px;
+    margin-top: 15px;
+  
+}
+
+
+.prepname{
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.preptime{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -8px;
+}
+.recpdetails{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.ingre{
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.ingre1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    // background: #ffffff;
+    margin-left: 170px;
+   margin-top: -30px;
+  
+    @media (min-width: 36em) {
+      width: 360px;
+    }
+  
+    li {
+      position: relative;
+      margin: 0;
+    }
+  }
+  
+  input {
+    -webkit-appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+   
+    border: 1px solid hsl(0, 36%, 47%);
+    border-radius: 5px;
+    vertical-align: sub;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    outline: none;
+  
+    &:checked {
+      background-color: hsl(0, 52%, 49%);
+      border-color: hsl(0, 36%, 47%);
+  
+      & + label {
+        text-decoration: line-through;
+        color: hsl(0, 0%, 70%);
+        font-weight: 600;
+        /* background-color: hsl(0, 0%, 97%); */
+      }
+  
+      &:focus,
+      &:hover {
+        box-shadow: 0 0 0 3px hsl(0, 0%, 85%);
+        border-color: hsl(0, 36%, 47%);
+      }
+    }
+  
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPmljb25fYnlfUG9zaGx5YWtvdjEwPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjZmZmZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4wMDAwMDAsIDI2LjAwMDAwMCkiPjxwYXRoIGQ9Ik0xNy45OTk5ODc4LDMyLjQgTDEwLjk5OTk4NzgsMjUuNCBDMTAuMjI2Nzg5MSwyNC42MjY4MDE0IDguOTczMTg2NDQsMjQuNjI2ODAxNCA4LjE5OTk4Nzc5LDI1LjQgTDguMTk5OTg3NzksMjUuNCBDNy40MjY3ODkxNCwyNi4xNzMxOTg2IDcuNDI2Nzg5MTQsMjcuNDI2ODAxNCA4LjE5OTk4Nzc5LDI4LjIgTDE2LjU4NTc3NDIsMzYuNTg1Nzg2NCBDMTcuMzY2ODIyOCwzNy4zNjY4MzUgMTguNjMzMTUyOCwzNy4zNjY4MzUgMTkuNDE0MjAxNCwzNi41ODU3ODY0IEw0MC41OTk5ODc4LDE1LjQgQzQxLjM3MzE4NjQsMTQuNjI2ODAxNCA0MS4zNzMxODY0LDEzLjM3MzE5ODYgNDAuNTk5OTg3OCwxMi42IEw0MC41OTk5ODc4LDEyLjYgQzM5LjgyNjc4OTEsMTEuODI2ODAxNCAzOC41NzMxODY0LDExLjgyNjgwMTQgMzcuNzk5OTg3OCwxMi42IEwxNy45OTk5ODc4LDMyLjQgWiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==");
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+   
+  }
+  
+  label {
+    padding: 5px 5px 5px 42px;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    user-select: none;
+    /* border-bottom: 2px solid hsl(0, 0%, 93%); */
+    cursor: pointer;
+   margin-left: 10px;
+  }
+
+  
+
+
+
+  .Ingredients-block{
+    margin-left: 190px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .Ingredients-inner-block{
+        display: flex;
+        flex-direction: row;
+        
+
+
+
+        ::ng-deep.border-box{
+            display: inline-block;
+            border: 2px solid hsl(0, 36%, 47%);
+            background-color: hsl(0, 36%, 47%); /* You can adjust this value to change the background color */
+            color: white;
+            border-radius: 5px;
+            padding: 0px;
+            margin-right: 15px;
+            text-align: center;
+            width: 15px;
+            height: 15px;
+            margin-bottom: 20px;
+            font-size: 12px;  
+          }
+
+          .Ingredients-text{
+            max-width: 550px;
+            padding-bottom: 35px;
+        }
+    }
+  }
+.textflex{
+    display: flex;
+    flex-direction: row;
+}
+.RR1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.RRimg img{
+    max-width: 180px;
+    max-height: 150px;
+    margin-left: 120px;
+}
+.RRdata{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    max-width: 30%;  
+}
+.calary{
+    display: flex;
+    flex-direction: row;
+    margin-top: -13px;
+  }
+  .calimg{
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+  }
+  .caltext{
+    margin-left: 5px;
+    color: gray;
+    margin-top: 7px;
+    font-size: 14px;
+    
+  }
+  .card2{
+    background-color: rgba( 252,200,193, 0.5);
+    width: 300px;
+    height: 330px;
+    backdrop-filter: blur(10px);
+    margin-top: 70px;
+    margin-left: 120px;
+    font-family: "Prompt", sans-serif;
+    padding: 15px 15px 15px 15px;
+  }
+  .c2header{
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .c2detail{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .input-group {
+    margin-top: 10px;
+  }
+  
+  .input-group input[type="email"] {
+    padding: 13px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px; /* Increase font size for the email input */
+    padding-left: 30px; /* Add padding for the icon */
+    margin-top: 50px;
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    background-position: 8px 50%; /* Adjust position of the icon */
+  }
+  
+  .input-group button {
+    margin-top: 10px;
+    width: 265px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: #b75f55;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-left: 15px;
+  }
+  
+  .input-group button:hover {
+    background-color: #d36b5f;
+  }
+  .related-recipe{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    width: 80%;
+
+    .related{
+        width: 240px;
+    }
+   
+  }
+ .related img{
+    max-width: 200px ;
+    max-height: 200px ;
+ }
+ .related p{
+    text-align: center;
+    width: 80%;
+ }
+.like{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 140px;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: column;
+    margin-left: 140px;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .card{
+    margin-top: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 220px;
+    width: 200px;
+  
+  }
+  
+  .img-card {
+    width: 200px; /* Set the fixed width of the card */
+    height: 150px; /* Set the fixed height of the card */
+    overflow: hidden; /* Hide overflowing content */
+    border: 1px solid #ccc; /* Optional: Add border for aesthetics */
+    border-radius: 8px; /* Optional: Add border-radius for aesthetics */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Optional: Add margin between cards */
+  }
+  .svgsave{
+    margin-top: 0.6rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 6px 0 0 5px;
+    border-radius: 20%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-50%);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .imgborad img{
+    height: 20px;
+  }
+  
+  .imgtag img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+  .stars1{
+    color: #b66056;
+    margin-top: -20px;
+    margin-left: 15px;
+  }
+  h5{
+    margin-left: 15px;
+    margin-top: -10px;
+  }
+  .recipecard{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(238, 231, 230, 0.5);
+    width: 500px;
+    height: 1000px;
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+    margin-left: 190px;
+    font-family: "Prompt", sans-serif;
+    padding: 15px 15px 15px 15px;
+  }
+  .imgandname{
+    display: flex;
+    flex-direction: row;
+  }
+  .CRname{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .saveoutline{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #b66056;
+    border-radius: 10px;
+    background-color: #b66056;
+    color: white;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+  }
+  .saveoutlineimg{
+    width:25px; 
+    height:25px;
+    margin-top: 8px;
+  }
+  .saveoutline p{
+    margin-top: 9px;
+    margin-left: 5px;
+  }
+  .shareandadd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .hr4{
+    border: 1px solid darkgray;
+    width: 85%;
+    margin-left: 37px;
+    margin-top: 20px;
+  }
+  .hr5{
+    border: 3px solid #b66056;
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+  }
+  .card-ingre {
+    margin-left: -200px;
+  }
+ 
+  
+
+
+  
+  
+
+  @media (max-width: 1024px) {
+  
+  .bookmark{
+    width:20px; 
+    height:20px;
+    color:#b75f55; 
+    border: 1px solid lightgrey; 
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 40px;
+    margin-top: -4px;
+}
+.share{
+    width:23px; 
+    height:23px;
+    color:#b75f55; 
+    margin-left: 10px;
+}
+// .bookmark-share{
+//   display: flex;
+//   flex-direction: row;
+// }
+.saladimg img{
+  width: 600px;
+  height: 400px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.prep{
+  margin-left: 150px;
+}
+.recpdetails{
+  margin-left: 30px;
+ }
+ .ingre{
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+ul{
+  margin-left: 30px;
+}
+.Ingredients-block{
+  // width: 60%;
+  margin-left: 50px;
+}
+.recipecard{
+  width: 500px;
+  height: 1000px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.card-ingre ul{
+  margin-left: 170px;
+}
+.ntrcard { 
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.recent{
+  margin-left: 60px;
+  font-size: 22px;
+}
+.RRimg img{
+  max-width: 150px;
+  max-height: 110px;
+  margin-left: 40px;
+}
+.RRdata{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  max-width: 40%;  
+  margin-top: -20px;
+}
+.hr5{
+  border: 3px solid #b66056;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+.like{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 60px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;  
+  width: 85%;
+  flex-wrap: wrap;
+}
+.card{
+  margin-top: 30px;
+  height: 190px;
+  width: 160px;
+}
+.img-card {
+  width: 160px; /* Set the fixed width of the card */
+  height: 120px; /* Set the fixed height of the card */
+}
+.card2{ 
+  width: 280px;
+  height: 330px;
+   margin-left: 50px;
+  font-family: "Prompt", sans-serif;
+  padding: 15px 15px 15px 15px;
+}
+.related-recipe{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  width: 80%;
+
+  .related{
+      width: 160px;
+  }
+ 
+}
+.related img{
+  max-width: 150px ;
+  max-height: 100px ;
+}
+.related p{
+  text-align: center;
+  width: 80%;
+  font-size: 15px;
+}
+.prep{
+  margin-left:170px;
+  width: 45%;
+}
+}
+
+@media (max-width: 432px) {
+  .path{
+    font-size: 13px;
+    margin-left: 20px;
+}
+.p2{
+  margin-left: 6px;
+}
+.recpname{
+  margin-left: 20px;
+}
+.name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 100%;
+}
+}

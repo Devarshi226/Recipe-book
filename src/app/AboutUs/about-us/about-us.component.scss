@@ -1,0 +1,227 @@
+.maincard {
+    width: 800px;
+    height: 550px;
+    padding: 20px;
+    margin-left: 320px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    font-family: "Prompt", sans-serif;
+  }
+  .aboutuscard,  .aboutuscard1{
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    // margin-left: 320px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-family: "Prompt", sans-serif;
+  }
+  // .aboutuscard1{
+  //   width: 400px;
+  //   height: 550px;
+  //   padding: 20px;
+  //   margin-left: 20px;
+  //   margin-top: 40px;
+  //   background-color: #ffffff;
+  //   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  //   transition: 0.3s;
+  //   font-family: "Prompt", sans-serif;
+  // }
+  .twocards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .details {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; 
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: justify;
+}
+.details1 {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; 
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 350px;
+    text-align: justify;
+}
+.OMp{
+    color: #b75f55; 
+    text-decoration: underline;
+}
+//   .main{
+//     display: flex;
+//     flex-direction: row;
+//   }
+  .signupimg img{
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+  }
+  .signupimg1 img{
+    width: 400px;
+    height: 550px;
+    margin-left: 250px;
+    object-fit: cover;
+  }
+  .signupimg2 img{
+    width: 400px;
+    height: 550px;
+    margin-left: 30px;
+    object-fit: cover;
+  }
+//   .hr{
+//     border: none;
+//     border-right: 2px solid lightgrey;
+//     // padding-left: 10px;
+//     height: 200px;
+//     margin-right: 650px;
+//   }
+  .head{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: -15px;
+  }
+  .head1{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: -15px;
+  }
+  .container {
+    width: 400px;
+    height: 80px;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .signupdata{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-left: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    
+    input{
+        border: none;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+    input:focus {
+        border-bottom: 3px solid #b75f55; 
+        outline: none;
+    }
+    textarea{
+        border: none;
+        width: 100%;
+        padding: 8px;
+        height: 60px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+        font-family: "Prompt", sans-serif;
+    }
+    textarea:focus{
+        border-bottom: 3px solid #b75f55; 
+        outline: none;
+    }
+  }
+ 
+  .username, .email, .password, .reset-password{
+    // position: relative;
+    // display: inline-block;
+    height: 40px;
+   
+  }
+
+ .usericon, .emailicon, .lockicon, .lockicon2 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -370px;
+    color: gray;
+    width: 20px;
+    height: 20px;
+ }
+
+
+  .signup-button {
+    padding: 10px 20px;
+    width: 93%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color:#b75f55;
+    color: white;
+    margin-left: 25px;
+    margin-top: 120px;
+    font-weight: bold;
+  }
+  .signup-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+ 
+
+  
+  .logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 290px;
+    margin-top: 180px;
+  }
+  .header1{
+    display: flex;   
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+.icon{
+    font-size: 22px;
+}
+.hed1{
+    text-decoration: underline;
+}
+.hed2{
+    color: #c88881;
+    text-decoration: underline;
+}
+.card2{
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    background-color:#c88881;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    font-family: "Prompt", sans-serif;
+}

@@ -1,0 +1,258 @@
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  // flex-direction: column;
+  margin-left: 200px;
+  align-items: center;
+  width: 75%;
+  flex-wrap: wrap;
+  font-family: "Prompt", sans-serif;
+}
+
+.card{
+  margin-top: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 340px;
+
+}
+
+.img-card {
+  width: 350px; /* Set the fixed width of the card */
+  height: 200px; /* Set the fixed height of the card */
+  overflow: hidden; /* Hide overflowing content */
+  border: 1px solid #ccc; /* Optional: Add border for aesthetics */
+  border-radius: 8px; /* Optional: Add border-radius for aesthetics */
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px; /* Optional: Add margin between cards */
+}
+.svgsave{
+  margin-top: 0.6rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  padding: 6px 0 0 5px;
+  border-radius: 20%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+}
+
+.imgborad img{
+  height: 30px;
+}
+
+.imgtag img {
+  width: 100%; /* Make the image width 100% of its container */
+  height: 100%; /* Make the image height 100% of its container */
+  object-fit: cover; /* Scale the image to be as large as possible while maintaining its aspect ratio */
+}
+.stars{
+  color: #b66056;
+  margin-top: -20px;
+  margin-left: 15px;
+}
+h4{
+  margin-left: 15px;
+  margin-top: -8px;
+}
+.part4{
+  display: flex;
+  flex-direction: row;
+
+}
+.personimg{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 15px;
+  object-fit: cover;
+  
+}
+.name{
+  margin-left: 8px;
+  margin-top: 23px;
+  font-size: 13px;
+  font-weight: 550;
+
+}
+
+.calary{
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
+  margin-top: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 1px;
+  height: 30px;
+  width: 90px;
+  padding: 0px 1px 0px 5px;
+
+
+}
+.calimg{
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+}
+.caltext{
+  margin-left: 5px;
+  color: gray;
+  margin-top: 7px;
+  font-size: 14px;
+  
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
+    font-family: "Prompt", sans-serif;
+  }
+  .card{
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 290px ;
+  
+  }
+  
+  .img-card {
+    width: 290px; /* Set the fixed width of the card */
+    height: 150px; /* Set the fixed height of the card */
+    overflow: hidden; /* Hide overflowing content */
+    border: 1px solid #ccc; /* Optional: Add border for aesthetics */
+    border-radius: 8px; /* Optional: Add border-radius for aesthetics */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Optional: Add margin between cards */
+  }
+  .stars{
+    color: #b66056;
+    margin-top: -20px;
+    margin-left: 10px;
+    
+  }
+  h4{
+    margin-left: 10px;
+    margin-top: -8px;
+  }
+  .part4{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .personimg{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 15px;
+    object-fit: cover;
+    
+  }
+  .name{
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 550;
+  
+  }
+  
+  .calary{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 1px;
+    height: 28px;
+    width: 80px;
+    padding: 0px 1px 0px 5px;
+  
+  
+  }
+  .calimg{
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+  }
+  .caltext{
+    margin-left: 5px;
+    color: gray;
+    margin-top: 7px;
+    font-size: 12px;
+    
+  }
+  .svgsave{
+    margin-top: 0.6rem;
+    height: 2rem;
+    width: 2rem;
+    padding: 4px 0 0 3px;
+   
+  }
+}
+
+@media (max-width: 432px) {
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+
+    font-family: "Prompt", sans-serif;
+  }
+  .card{
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 220px;
+    width: 180px ;
+  
+  }
+  
+  .img-card {
+    width: 180px; /* Set the fixed width of the card */
+    height: 130px; /* Set the fixed height of the card */
+    overflow: hidden; /* Hide overflowing content */
+    border: 1px solid #ccc; /* Optional: Add border for aesthetics */
+    border-radius: 8px; /* Optional: Add border-radius for aesthetics */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Optional: Add margin between cards */
+  }
+  .part4{
+    display: none;
+  }
+  .svgsave{
+    margin-top: 0.6rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 4px 0 0 3px;
+   
+  }
+  .imgborad img{
+    height: 20px;
+  }
+}

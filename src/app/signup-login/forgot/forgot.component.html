@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="maincard">
+    <div class="signupimg">
+        <img src="../../../assets/loginimg.jpg">
+    </div>
+    <div class="signupdata">
+        <div >
+            <p class="head">Forgot Your Password?</p>
+        </div>
+        <div><p  class="reset">No worry's, we'll send you reset instruction.</p></div>
+        <div class="container">
+            <form [formGroup]="ForgotForm">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email" style="padding-left: 40px;" formControlName="username">
+                    <ion-icon name="mail-outline" class="emailicon"></ion-icon>
+                </div>
+            
+            </form>
+        </div>
+        
+        
+        <div class="button-container main">
+            <button class="button signup-button" (click)="recoverPassword()" >Submit</button>
+        </div>
+        <div class="f-row">
+        <p class="login-note" style="font-size: 14px;">You want to Go back? &nbsp;</p> <p class="link" style="font-size: 14px;" [routerLink]="['/','login']">Log in</p>
+        </div>
+        
+        <div class="logo">
+            <div class="icon">
+                <ion-icon name="restaurant"></ion-icon>
+            </div>
+            <div class="header1">
+                <span class="hed1">FOOD.</span>
+                <span class="hed2">IO</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div style="margin-top: 10%;"> </div>
+<app-footer></app-footer>
+

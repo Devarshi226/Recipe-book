@@ -1,0 +1,318 @@
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.header{
+    display: flex;
+    margin-left: 40px;font-family: "Prompt", sans-serif;
+    
+}
+/* Add CSS for the hamburger menu button */
+.hamburger-menu {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+.header1{
+    display: flex;   
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+.icon{
+    font-size: 25px;
+
+}
+.ul-list{
+    list-style-type: none;
+    display: flex;
+    font-size: larger; 
+    font-weight: bold;
+    padding: 0;
+}
+.navbar-item{
+    margin-left: 20px;
+    margin-top: -20px; 
+    display: inline-block;
+    margin-right: 10px; 
+}
+.navbar-item span {
+    cursor: pointer;
+    position: relative;
+     text-decoration: none;
+}
+.navbar-item span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #b75f55;
+    transition: width 0.3s ease; /* Adjust animation speed as needed */
+}
+
+.navbar-item span:hover::after {
+    width: 100%;
+}
+
+
+
+.first{
+    margin-left: 300px;
+}
+.hed1{
+    text-decoration: underline;
+}
+.hed2{
+    color: #c88881;
+    text-decoration: underline;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 200px;
+  }
+  .circular-image{
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    margin-top: -10px;
+    margin-left: 180px;
+    margin-right: auto;
+  }
+  .logout-button {
+    display: inline-block;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+  
+    border-radius: 50%; /* Makes it circular */
+    background-color: #fde3e0; /* Change to desired background color */
+    color: black;
+    margin-top: -10px;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  .logout{
+    margin-top: 8px;
+  }
+ 
+  .logout-button:hover {
+    background-color: #f8c8c3; /* Change to desired hover background color */
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 240px;
+  }
+  .main2{
+    display: none;
+  }
+  .button {
+    // padding: 15px 30px;
+    width: 120px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  .login-button,
+  .signup-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button {
+    background-color: #fde3e0;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .signup-button {
+    background-color:#b75f55;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  
+  .login-button:hover,
+  .signup-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+
+    @media (max-width: 1024px) {
+    .ul-list {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 40px; /* Adjust this value as needed */
+        right: 0;
+        background-color: rgb(253,227,224, 0.6);
+        padding: 20px;
+        width: 200px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        text-align: center;
+
+    }
+
+    .ul-list.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu button */
+        cursor: pointer;
+        position: fixed;
+        top: 30px;
+        right: 20px; 
+    }
+
+    .main {
+        display: none; 
+    }
+    .navbar-item {
+        margin-bottom: 50px;
+        margin-left: 50px;
+
+    }
+    .main2{
+        display: block;
+        margin-left: 10px;
+    }
+    .first{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    .button {
+        // padding: 15px 30px;
+        width: 80px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 12px;
+      }
+      .login-button,
+      .signup-button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .login-button {
+        background-color: #b75f55;
+        color: white;
+        font-weight: bold;
+      }
+      
+}
+
+@media (max-width: 432px) {
+    #navbar{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .header{
+        margin-left: 20px;
+    }
+    .ul-list {
+       
+        flex-direction: column;
+        position: absolute;
+        top: 10px; /* Adjust this value as needed */
+        right: 0;
+        background-color: rgb(253,227,224, 0.6);
+        padding: 10px;
+        width: 150px;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        text-align: center;
+
+    }
+
+    .ul-list.active {
+        display: flex;
+    }
+
+    .header {
+        position: relative; /* Add relative positioning to the header */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu button */
+        cursor: pointer;
+        position: absolute;
+        top: -8px;
+        right: 40px; /* Adjust as needed */
+    }
+   
+
+    .navbar-item {
+        margin-bottom: 50px;
+        margin-left: 50px;
+
+    }
+    .main2{
+       display: none;
+    }
+    .first{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    .button {
+        // padding: 15px 30px;
+        width: 80px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 12px;
+      }
+      .login-button,
+      .signup-button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .login-button {
+        background-color: #b75f55;
+        color: white;
+        font-weight: bold;
+      }
+      
+}
+
