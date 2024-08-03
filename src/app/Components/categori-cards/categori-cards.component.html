@@ -1,0 +1,30 @@
+
+
+<div style="margin-top: 20px;">
+<div class="back-btn" >
+    <span class="material-symbols-outlined" (click)="back()">arrow_back</span>
+  </div>
+<div class="heading"><h1 class="h1">{{this.category | uppercase }}</h1></div>
+  
+
+    <div class="card-container" >
+        <div class="card" *ngFor="let Post of recipeDetails">
+            <div class="img-card">
+                <div class="imgtag"><img src={{Post.recipeImage}} alt="c1"></div>
+                <!-- <div class="svgsave imgborad"  *ngIf="Save"><img src="../../../assets/icons8-bookmark border.svg" (click)="saveButton()" ></div>
+                <div class="svgsave imgborad" *ngIf="!Save"><img src="../../../assets/icons8-bookmark cream.svg" (click)="saveButton()" ></div> -->
+              </div>
+              <p class="stars">★★★★☆</p>
+              <h4>{{Post. recipeTitle}}</h4>
+              <div class="part4">
+                <img src={{Post.authorImg}} class="personimg">
+                <p class="name">{{Post.authorName}}</p>
+                <div class="calary">
+                    <p class="caltext" [routerLink]="['/','recipe',Post.id]">View Recipe</p>
+                </div>
+            </div>
+            <!-- <button mat-stroked-button color="primary" [routerLink]="['/','recipe',Post.id]">Show Details</button>  -->
+        </div>
+    </div>
+</div>
+

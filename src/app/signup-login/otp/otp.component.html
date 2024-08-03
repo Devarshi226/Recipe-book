@@ -1,0 +1,23 @@
+<div class="bgcontainer">
+    <div class="card">
+      <div  class="d-flex justify-content-center ">
+        <h2>Enter 6-digit OTP</h2>
+      </div>
+      <div class="mt-3 d-flex">
+        <form [formGroup]="otpForm" (ngSubmit)="submitOTP()" class="form">
+          <div class="pin-input-container mx-1" *ngFor="let input of formInput;  index as i">
+            <!-- <input type="text" (keyup)="keyUpEvent($event, i)" formControlName="input1" maxlength="1" (input)="moveToNext($event, 1)" #input1> -->
+            <input size="10" #formRow type="text" formControlName="{{input}}" class="form-control" maxlength="1" (keyup)="keyUpEvent($event, i)">
+            <!-- <input type="text" formControlName="input2" maxlength="1" (input)="moveToNext($event, 2)" #input2>
+            <input type="text" formControlName="input3" maxlength="1" (input)="moveToNext($event, 3)" #input3>
+            <input type="text" formControlName="input4" maxlength="1" (input)="moveToNext($event, 4)" #input4>
+            <input type="text" formControlName="input5" maxlength="1" (input)="moveToNext($event, 5)" #input5>
+            <input type="text" formControlName="input6" maxlength="1" (input)="moveToNext($event, 6)" #input6> -->
+          </div>
+          <div>
+          <button  class="signup-button" type="submit" [disabled]="otpForm.invalid">Submit</button>
+        </div>
+        </form>
+      </div>
+    </div>
+</div>

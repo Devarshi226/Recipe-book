@@ -21,6 +21,13 @@ import { ForgotComponent } from './signup-login/forgot/forgot.component';
 import { AboutUsComponent } from './AboutUs/about-us/about-us.component';
 import { ShoppingComponent } from './Shopping/shopping/shopping.component';
 import { AllRecipeComponent } from './Components/all-recipe/all-recipe.component';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { OtpComponent } from './signup-login/otp/otp.component';
+import { ResetpasswordComponent } from './signup-login/resetpassword/resetpassword.component';
+import { TokenInterceptor } from './interceptor-token.interceptor';
+import { CategoriCardsComponent } from './Components/categori-cards/categori-cards.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -37,13 +44,18 @@ import { AllRecipeComponent } from './Components/all-recipe/all-recipe.component
     ForgotComponent,
     AboutUsComponent,
     ShoppingComponent,
-    AllRecipeComponent
+    AllRecipeComponent,
+    OtpComponent,
+    ResetpasswordComponent,
+    CategoriCardsComponent
   ],
   imports: [
+    Ng2SearchPipeModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyDT3ru6GQy6McbC9pAHoHhB71lBM2T1sFc",
       authDomain: "recipebook-3db16.firebaseapp.com",
@@ -56,9 +68,11 @@ import { AllRecipeComponent } from './Components/all-recipe/all-recipe.component
     NgToastModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(),
-  
+    NgxSpinnerModule
   ],
-  providers: [],
+  providers: [{provide:HTTP_INTERCEPTORS,
+    useClass:TokenInterceptor,
+    multi: true}],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA] 
 })

@@ -10,22 +10,30 @@ import { AddRecipeComponent } from './AddNew/add-recipe/add-recipe.component';
 import { ForgotComponent } from './signup-login/forgot/forgot.component';
 import { AboutUsComponent } from './AboutUs/about-us/about-us.component';
 import { ShoppingComponent } from './Shopping/shopping/shopping.component';
-import { AuthGuard } from './Authentication/auth.guard';
+// import { AuthGuard } from './Authentication/auth.guard';
 import { AllRecipeComponent } from './Components/all-recipe/all-recipe.component';
+import { OtpComponent } from './signup-login/otp/otp.component';
+import { ResetpasswordComponent } from './signup-login/resetpassword/resetpassword.component';
+import { CategoriCardsComponent } from './Components/categori-cards/categori-cards.component';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './Authentication/auth.guard';
 
 
 const routes: Routes = [
-  
-  {path:'', component:HomeComponent},
+  {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'home', component:HomeComponent},
   {path:'header', component:HeaderComponent},
-  {path:'recipe', component:RecipeComponent,data: {animation : 'isReight'}},
+  {path:'recipe/:id', component:RecipeComponent, canActivate:[AuthGuard]},
   {path:'signup', component:SignupComponent},
   {path:'login', component:LoginComponent},
-  {path:'add', component:AddRecipeComponent, data: { animation: 'isLeft' }, canActivate: [AuthGuard] },
+  {path:'add', component:AddRecipeComponent},
   {path:'forgot', component:ForgotComponent},
+  {path:'otp', component:OtpComponent},
   {path:'aboutus', component:AboutUsComponent},
-  {path:'shopping', component:ShoppingComponent, canActivate: [AuthGuard]},
-  {path:'allrecipe', component:AllRecipeComponent}
+  {path:'contactus', component:ShoppingComponent},
+  {path:'allrecipe', component:AllRecipeComponent},
+  {path:'reset', component:ResetpasswordComponent},
+  {path: 'category', component: CategoriCardsComponent}
 ];
 
 @NgModule({

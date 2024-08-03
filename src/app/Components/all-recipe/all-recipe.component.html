@@ -1,22 +1,28 @@
 <app-header></app-header>
 
+<img src="http://localhost:4200/images/deac12fa-9ae9-4645-93ef-b6f62c94bbc5_471ae78c-c271-4d3b-ac49-0309cbb340b3_1dc4d4e5-ae11-4788-8cd8-abb816e9dbcd_Image1.jpg" alt="">
+<div class="heading"><h1 class="h1">All Recipes</h1></div>
 <div class="card-container">
-    <div class="card">
+    <div class="card" *ngFor="let recipe of recepiCard | filter : filterData;">
         <div class="img-card">
-            <div class="imgtag"><img src="../../../assets/c1.jpg" alt="c1"></div>
-            <div class="svgsave imgborad"  *ngIf="Save"><img src="../../../assets/icons8-bookmark border.svg" (click)="saveButton()"></div>
-            <div class="svgsave imgborad" *ngIf="!Save"><img src="../../../assets/icons8-bookmark cream.svg" (click)="saveButton()"></div>
-          </div>
-          <p class="stars">★★★★☆</p>
-          <h4>Straberry and walnut Spinach Salad </h4>
-          <div class="part4">
-            <img src="../../../assets/devu.png" class="personimg">
-            <p class="name">Devu Kathiriya</p>
+            <div class="imgtag"><img [src]="recipe.recipeImage" alt="c1"></div>
+            <span class="material-symbols-outlined svgsave imgborad" *ngIf="Button2"
+                style="cursor: pointer; color:#b66056;" (click)="deleteRecipe(recipe.id)"> delete </span>
+            <!-- <div class="svgsave imgborad"  ><img src="../../../assets/bin.png" (click)="deleteRecipe(Post.id)"></div> -->
+            <!-- <div class="svgsave imgborad" ><img src="../../../assets/icons8-bookmark cream.svg"  (click)="deleteRecipe(Post.id)"></div> -->
+        </div>
+        <p class="stars">★★★★☆</p>
+        <h4>{{recipe. recipeTitle}}</h4>
+        <div class="part4">
+            <div class="authName-Img">
+                <img src={{recipe.authorImg}} class="personimg">
+                 <p class="name">{{recipe.authorName}}</p>
+            </div>
             <div class="calary">
-                <img src="../../../assets/burn.png" class="calimg">
-                <p class="caltext">188 cals</p>
+                <p class="caltext" [routerLink]="['/','recipe',recipe.id]">View Recipe</p>
             </div>
         </div>
+        <!-- <button mat-stroked-button color="primary" [routerLink]="['/','recipe',Post.id]">Show Details</button>  -->
     </div>
 </div>
 
@@ -25,3 +31,7 @@
 
 <div style="margin-top: 10%;"></div>
 <app-footer></app-footer>
+
+<div style="display: none;">
+    {{userhide()}}
+</div>

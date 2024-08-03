@@ -16,14 +16,14 @@
 
             <div class="mrg">
                 <p class="pmrg">Recipe Title:</p>
-                <input type="text" formControlName="title" style="padding-left: 10px;" placeholder="Title">
+                <input type="text" formControlName="recipeTitle" style="padding-left: 10px;" placeholder="Title">
             </div>
 
             <div class="mrg">
                 <p class="pmrg">Recipe Image:</p>
                 <div class="pos">
-                    <div class="food">
-                        <img src="{{imgUrl}}" alt="">
+                    <div class="food" >
+                        <img src={{imgUrl}} alt="">
                     </div>
                     <button class="setBtn">Set as cover</button>
                     <button class="changeBtn">Change Image</button>
@@ -35,12 +35,12 @@
                 </div>
                 <div class="frow">
 
-                    <div class="addPic fcol">
-                        <input type="file" class="fileInput" (change)="onFileSelected($event)" formControlName="img">
-                        <span class="material-symbols-outlined">
-                            photo_camera
-                        </span>
+                    <div class="addPic fcol" (change)="onRecipeImageSelected($event)">
+                      
+                        <input type="file" class="fileInput"  formControlName="recipeImage">
+                        <span class="material-symbols-outlined">photo_camera</span>
                         <p>Add Photo</p>
+                 
                     </div>
 
 
@@ -56,19 +56,20 @@
 
             <div class="mrg fcol">
                 <p class="pmrg">Discription:</p>
-                <input type="text" #descriptionInput (input)="onInputChange(descriptionInput.value)" maxlength="100"
-                    formControlName="discription" style="padding-left: 10px" placeholder="Discription">
+                <input type="text" #descriptionInput (input)="onInputChange(descriptionInput.value)" maxlength="100000"
+                    formControlName="description" style="padding-left: 10px" placeholder="Discription">
                 <label>{{count}} / 100</label>
             </div>
 
             <div class="mrg">
                 <p class="pmrg ing">Ingredients:</p>
-                <div formArrayName="details">
+                <div formArrayName="ingredients">
                     <div *ngFor="let auth of authors.controls; let i=index;">
                         <div appearance="fill" [formGroupName]="i" class="frow">
                             <input class="inpArry" placeholder="Ingredients" type="text" name="details"
-                                formControlName="ingredians">
-                            <span class="material-symbols-outlined" style="color: #B66055; cursor: pointer" (click)="RemoveAuthor(i)">
+                                formControlName="ingredients">
+                            <span class="material-symbols-outlined" style="color: #B66055; cursor: pointer"
+                                (click)="RemoveAuthor(i)">
                                 close
                             </span>
                         </div>
@@ -111,12 +112,13 @@
                 </div>
 
                 <div class="mrg">
-                    <div formArrayName="step">
+                    <div formArrayName="instruction">
                         <div *ngFor="let auth of authors1.controls; let i=index;">
                             <div appearance="fill" [formGroupName]="i" class="frow">
                                 <input class="inpArry" placeholder="Write instruction" type="text" name="step"
                                     formControlName="instruction">
-                                <span class="material-symbols-outlined" style="color: #B66055; cursor: pointer" (click)="RemoveAuthor1(i)">
+                                <span class="material-symbols-outlined" style="color: #B66055; cursor: pointer"
+                                    (click)="RemoveAuthor1(i)">
                                     close
                                 </span>
                             </div>
@@ -130,7 +132,7 @@
 
             <div class="mrg">
                 <p class="mrg2">Servings:</p>
-                <input type="text" style="padding-left: 10px;" placeholder="#" formControlName="serving">
+                <input type="number" style="padding-left: 10px;" placeholder="#" formControlName="serving">
                 <label style="display: flex; justify-content: flex-start">How many portion does this recipe
                     make?</label>
             </div>
@@ -141,8 +143,8 @@
 
                     <p class="mrg2">Cooking Time:</p>
                     <div class="frow rowInp">
-                        <input type="text" placeholder="Hours 0" style="padding-left: 10px;" formControlName="cookHour">
-                        <input type="text" placeholder="Minutes 0" style="padding-left: 10px;"
+                        <input type="number" placeholder="Hours 0" style="padding-left: 10px;" formControlName="cookHour">
+                        <input type="number" placeholder="Minutes 0" style="padding-left: 10px;"
                             formControlName="cookMinute">
                     </div>
                     <label style="display: flex; justify-content: flex-start">How long does it take to cook this
@@ -154,8 +156,8 @@
 
                     <p class="mrg2">Prep Time:</p>
                     <div class="frow rowInp">
-                        <input type="text" placeholder="Hours 0" style="padding-left: 10px;" formControlName="prepHour">
-                        <input type="text" placeholder="Minutes 0" style="padding-left: 10px;"
+                        <input type="number" placeholder="Hours 0" style="padding-left: 10px;" formControlName="prepHour">
+                        <input type="number" placeholder="Minutes 0" style="padding-left: 10px;"
                             formControlName="prepMinute">
                     </div>
                     <label style="display: flex; justify-content: flex-start">How long does it take to prepare this
@@ -168,15 +170,39 @@
             <div class="mrg sel-div">
 
                 <p class="mrg2">Cuisine:</p>
-                <select formControlName="cuisine">
+                <select formControlName="cusine">
                     <option value="Italian">Italian</option>
-                    <option value="french">French</option>
+                    <option value="Chinese">Chinese</option>
                     <option value="mexican">Mexican</option>
                     <option value="indian">Indian</option>
-                    <option value="russian">Russian</option>
+                    <option value="Salad">Salad</option>
+                    <option value="Drinks">Drinks</option>
+                    <option value="Dessert">Dessert</option>
                 </select>
 
 
+            </div>
+            <!-- Inside the form -->
+            <div class="mrg">
+                <p class="pmrg">Author Name:</p>
+                <input type="text" formControlName="authorName" style="padding-left: 10px;" placeholder="Author Name">
+            </div>
+
+            <div class="mrg1">
+                <p class="pmrg">Author Image:</p>
+                <div class="pos1">
+                    <div class="addPic1 fcol" >
+                        <input type="file" class="fileInput" (change)="onAuthorImgSelected($event)">
+                        <span class="material-symbols-outlined">
+                            photo_camera
+                        </span>
+                        <p>Add Photo</p>
+                    </div>
+                    <div class="food">
+                        <img src="{{ authorImgUrl }}" alt="" style="height: 5rem; width: 6rem;">
+                    </div>
+                    
+                </div>
             </div>
 
 
@@ -185,5 +211,5 @@
     </form>
 
 </div>
-<div style="margin-top: 5%;"> </div>
+<div style="margin-top: -30px;"> </div>
 <app-footer></app-footer>

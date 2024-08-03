@@ -70,6 +70,12 @@
   margin-right: 10px;
   object-fit: cover;
 }
+.exploreRecipe{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
 
 .hc1, .hc2 {
     font-weight: bold;
@@ -196,6 +202,7 @@ img{
     font-family: "Prompt", sans-serif ;
     font-weight: bold;
     color: #b75f55;
+    cursor: pointer;
   }
   .touch{
     background-color: #fde3e0;
@@ -276,10 +283,10 @@ img{
   .team-members {
     display: flex;
     flex-direction: column; 
-    width: 70%;
+    // width: 50%;
     font-family: "Prompt", sans-serif ;
     font-size: 20px;
-    margin-left: 170px;
+    // margin-left: 30px;
     margin-top: -40px;
 }
 
@@ -287,13 +294,22 @@ img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-left: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
     object-fit: cover;
+    cursor: pointer;
+}
+.team-member img:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .team-member p {
     text-align: center;
-    margin-left: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
 .brandimg{
     margin-left: 225px;

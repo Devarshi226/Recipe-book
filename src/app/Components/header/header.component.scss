@@ -6,10 +6,18 @@
     padding-top: 30px;
     padding-bottom: 15px;
 }
+// .mainDiv{
+//   display: flex;
+//   justify-content: space-around;
+// }
 .header{
     display: flex;
     margin-left: 40px;font-family: "Prompt", sans-serif;
-    
+     justify-content: space-between;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
 }
 /* Add CSS for the hamburger menu button */
 .hamburger-menu {
@@ -31,6 +39,11 @@
 .icon{
     font-size: 25px;
 
+}
+.buttonFlex{
+  display: flex;
+  justify-content: space-between;
+  // margin-left: 250px;
 }
 .ul-list{
     list-style-type: none;
@@ -67,11 +80,41 @@
 
 
 
-.first{
-    margin-left: 300px;
-}
+// .first{
+//     margin-left: 300px;
+// }
 .hed1{
     text-decoration: underline;
+}
+// .buttonFlex input[type="text"] {
+//   padding: 8px 15px; /* Adjust padding as needed */
+//   border: 1px solid #ccc; /* Add border */
+//   border-radius: 5px; /* Round corners */
+//   font-size: 14px; /* Adjust font size */
+//   margin-right: 10px; /* Adjust margin as needed */
+//   width: 200px; /* Adjust width as needed */
+//   box-sizing: border-box; /* Include padding and border in the width */
+// }
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  // border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 20px;
+  // margin-left: 170px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
 }
 .hed2{
     color: #c88881;
@@ -81,7 +124,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 200px;
+    // margin-left: 200px;
+    padding-right: 20px;
   }
   .circular-image{
     width: 40px; /* Adjust size as needed */
@@ -89,7 +133,7 @@
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensure the image covers the entire container */
     margin-top: -10px;
-    margin-left: 180px;
+    // margin-left: 180px;
     margin-right: auto;
   }
   .logout-button {
@@ -118,7 +162,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 240px;
+    // margin-left: 240px;
+    padding-right: 20px;
   }
   .main2{
     display: none;

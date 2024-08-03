@@ -1,4 +1,6 @@
 <app-header></app-header>
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" loadingText="Loading..." type="Ball Fussion">
+</ngx-spinner>
 <div class="maincard">
     <div class="signupimg">
         <img src="../../../assets/loginimg.jpg">
@@ -10,7 +12,7 @@
         <div class="container">
             <form [formGroup]="loginForm">
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email" style="padding-left: 40px;" formControlName="username">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email" style="padding-left: 40px;" formControlName="email">
                     <ion-icon name="mail-outline" class="emailicon"></ion-icon>
                 </div>
                 <div class="form-group">
@@ -23,9 +25,9 @@
         <div><p class="forgot" [routerLink]="['/','forgot']">Forgot Password?</p></div>
         
         <div class="button-container main">
-            <button class="button signup-button" (click)="onLogin()" >Log in</button>
+            <button class="button signup-button" (click)="onLogin()" [ngStyle]="{'background-color': loginForm.valid ? '#b75f55' : 'lightgray'}" >Log in</button>
         </div>
-        <div class="otheroption">
+        <!-- <div class="otheroption">
             <p>Or you can join with</p>
             <div class="options">
                 <div class="option1">
@@ -37,12 +39,12 @@
                     <p>Log in with Google</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="gotologin">
             <p class="p1">Don't have an account?</p>
-            <p class="p2" [routerLink]="['/','signup']">Sign in</p>
+            <p class="p2" [routerLink]="['/','signup']">Sign up</p>
         </div>
-        <div class="logo">
+        <!-- <div class="logo">
             <div class="icon">
                 <ion-icon name="restaurant"></ion-icon>
             </div>
@@ -50,7 +52,7 @@
                 <span class="hed1">FOOD.</span>
                 <span class="hed2">IO</span>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

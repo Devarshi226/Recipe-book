@@ -4,29 +4,37 @@
         <img src="../../../assets/loginimg.jpg">
     </div>
     <div class="signupdata">
-        <div >
+        <div>
             <p class="head">Forgot Your Password?</p>
         </div>
-        <div><p  class="reset">No worry's, we'll send you reset instruction.</p></div>
+        <div>
+            <p class="reset">No worry's, we'll send you reset instruction.</p>
+        </div>
         <div class="container">
             <form [formGroup]="ForgotForm">
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email" style="padding-left: 40px;" formControlName="username">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="email"
+                        style="padding-left: 40px;" formControlName="email">
                     <ion-icon name="mail-outline" class="emailicon"></ion-icon>
                 </div>
-            
+
             </form>
         </div>
-        
-        
+
+
         <div class="button-container main">
-            <button class="button signup-button" (click)="recoverPassword()" >Submit</button>
+            <!-- <button class="button signup-button" [disabled]="!ForgotForm.valid" (click)="recoverPassword()">Recover
+                Password</button> -->
+                <button class="button signup-button" [disabled]="!ForgotForm.get('email')?.valid" [ngStyle]="{'background-color': ForgotForm.get('email')?.valid ? '#b75f55' : 'lightgray'}" (click)="recoverPassword()">Recover Password</button>
+
+
         </div>
         <div class="f-row">
-        <p class="login-note" style="font-size: 14px;">You want to Go back? &nbsp;</p> <p class="link" style="font-size: 14px;" [routerLink]="['/','login']">Log in</p>
+            <p class="login-note" style="font-size: 14px;">You want to Go back? &nbsp;</p>
+            <p class="link" style="font-size: 14px;" [routerLink]="['/','login']">Log in</p>
         </div>
-        
-        <div class="logo">
+
+        <!-- <div class="logo">
             <div class="icon">
                 <ion-icon name="restaurant"></ion-icon>
             </div>
@@ -34,7 +42,7 @@
                 <span class="hed1">FOOD.</span>
                 <span class="hed2">IO</span>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -42,4 +50,3 @@
 
 <div style="margin-top: 10%;"> </div>
 <app-footer></app-footer>
-

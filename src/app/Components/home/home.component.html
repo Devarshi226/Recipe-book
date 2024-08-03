@@ -4,7 +4,7 @@
    <div class="flexbox">
   
     <div class="homeimg">
-        <div class="home-card" [@fadeInOut]>
+        <div class="home-card" >
             <div>
                 <h1 class="hc1">
                     Your Daily Dish
@@ -57,7 +57,7 @@
 
    </div>
 
-   <div data-aos="zoom-out-up">
+   <div>
     <div class="part2">
         <div class="img">
             <img src="../../../assets/share recipe (1).png" alt="image1">
@@ -77,7 +77,7 @@
             dish. Let's spread the joy of cooking together!</span>
     </div>
     <div class="button-container">
-        <button class="button signup-button" [routerLink]="['/','add']">Create New Recipe</button>
+        <button class="button signup-button" [routerLink]="['/','contactus']">Contact Us</button>
     </div>
 </div>
 
@@ -85,8 +85,8 @@
         <span>Explore Recipe</span>
         
     </div>
-    <span class="viewmore">View More</span>
-    <app-create-new-recipe></app-create-new-recipe>
+    <span class="viewmore" [routerLink]="['/','allrecipe']">View More</span>
+   <div class="exploreRecipe"> <app-create-new-recipe></app-create-new-recipe></div>
     <div class="touch">
         <span class="c1">Let's Stay in Touch!</span>
         <span class="c2">Join our newsletter,so that we reach out to you with our news and offers. </span>
@@ -97,44 +97,37 @@
               </div>
         </div>
     </div>
-   <div class="pop"  data-aos="zoom-out-up">
+   <div class="pop" >
     <span class="popular">Popular Categories</span>
     <div class="team-members">
        <div class="first">
-        <div class="team-member">
-            <img src="../../../assets/c1.jpg" alt="Team Member 1">
-            <p>Breakfast Recipe</p>
-        </div>
-        <div class="team-member">
-            <img src="../../../assets/c2.jpg" alt="Team Member 2">
-            <p>Lunch Recipe</p>
-        </div>
-        <div class="team-member">
-            <img src="../../../assets/c3.jpg" alt="Team Member 3">
-            <p>Dinner Recipe</p>
-        </div>
-        <div class="team-member">
-            <img src="../../../assets/c1.jpg" alt="Team Member 3">
-            <p>Pizza Recipe</p>
-        </div>
-       </div>
-    
-        <div class="second">
-            <div class="team-member">
-                <img src="../../../assets/c1.jpg" alt="Team Member 1">
-                <p>Salad Recipe</p>
+            <div class="team-member" (click)="indCat()">
+                <img src="../../../assets/upload/7952f7f6-2a6a-4412-8027-7d214a30a619_samosa.png" alt="Team Member 1">
+                <p>Indian</p>
             </div>
-            <div class="team-member">
-                <img src="../../../assets/c2.jpg" alt="Team Member 2">
-                <p>Smoothie Recipe</p>
+            <div class="team-member" (click)="maxCat()">
+                <img src="../../../assets/upload/6793b906-362e-4b8d-ace4-b0fc40278775_corn.png" alt="Team Member 2">
+                <p>Maxican</p>
             </div>
-            <div class="team-member">
-                <img src="../../../assets/c3.jpg" alt="Team Member 3">
-                <p>Pasta Recipe</p>
+            <div class="team-member" (click)="itaCat()">
+                <img src="../../../assets/upload/3c7458e1-c08d-4eac-8ce0-ec6297d2e3ef_pasta.png" alt="Team Member 3">
+                <p>Italian</p>
             </div>
-            <div class="team-member">
-                <img src="../../../assets/c2.jpg" alt="Team Member 3">
-                <p>Chinese Recipe</p>
+            <div class="team-member" (click)="chiCat()">
+                <img src="../../../assets/upload/4e82be82-18dc-4988-8ee6-5772d2442f54_manchurian.jpg" alt="Team Member 3">
+                <p>Chinese</p>
+            </div>
+            <div class="team-member" (click)="salCat()">
+                <img src="../../../assets/upload/salad-1.png" alt="Team Member 1">
+                <p>Salad</p>
+            </div>
+            <div class="team-member" (click)="driCat()">
+                <img src="../../../assets/upload/60cc718b-5c8a-4050-870c-3a766184e3f1_drink-2.png" alt="Team Member 1">
+                <p>Drink</p>
+            </div>
+            <div class="team-member" (click)="desCat()">
+                <img src="../../../assets/upload/cheescake.png" alt="Team Member 1">
+                <p>Dessert</p>
             </div>
         </div>
     </div>

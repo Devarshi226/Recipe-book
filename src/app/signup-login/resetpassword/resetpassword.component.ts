@@ -5,49 +5,57 @@ import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+  selector: 'app-resetpassword',
+  templateUrl: './resetpassword.component.html',
+  styleUrls: ['./resetpassword.component.scss']
 })
-export class SignupComponent implements OnInit {
-  signinForm: FormGroup;
+export class ResetpasswordComponent {
+  resetForm: FormGroup;
   roleUser: any;
   uid:string = ''
+  codeUser: any;
   eyeIcon: string = 'fa-eye-slash'
   visibility: string = 'hidden';
   type: string = "password"
   isText: boolean = false;
+  
 
 
   constructor( private fb:FormBuilder, private route:Router, private auth: AuthService, private toastr: ToastrService){}
    ngOnInit(){
-     this.signinForm = this.fb.group({
-       userName:['', [Validators.required]],
-       password:['', [Validators.required, Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/) ]],
+     this.resetForm = this.fb.group({
        email: ['', [Validators.required, Validators.pattern('^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$')]],
-       mobileNo:['',[Validators.required]],
-       role:['user']
+       otp:['', [Validators.required]],
+       password:['', [Validators.required, Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/) ]],
+       confirmPassword:['',[Validators.required]],
+     
     
      })
     
    }
    get f(){
-    return this.signinForm.controls;
+    return this.resetForm.controls;
   }
-  onSubmit(): void{
+  onReset(): void{
     debugger
-    this.roleUser = this.signinForm.value.role
-    this.auth.signUp(this.signinForm.value, this.roleUser).subscribe(
-      (res) => {
-        console.log(res);
-        this.toastr.success('Registration Completed Successfully', 'Success!');
-        this.route.navigate(['/login']);
-      },
-      (error) => {
-        this.toastr.error(error.error.message, 'Error!');
-      }
-    );
-
+    if (this.resetForm.valid) {
+      this.auth
+        .NewPassword(
+          this.resetForm.value.otp,
+          this.resetForm.value
+        )
+        .subscribe(
+          (res) => {
+            console.log(res);
+           
+            this.toastr.success( 'Password Changed Successfully',  'SUCCESS', {timeOut: 3000,});
+            this.route.navigate(['login']);
+          },
+          (error) => {
+            this.toastr.error( 'Something went wrong!',  'Eroor', {timeOut: 3000,});
+          }
+        );
+    }
     //Firebase
       // this.fireauth.signUp({
       //   email: this.signinform.value.email,
@@ -74,4 +82,4 @@ export class SignupComponent implements OnInit {
       }
     }
   
-  
+

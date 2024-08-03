@@ -1,27 +1,32 @@
 
 .card-container {
+  margin-left: 110px;
+}
+.row{
   display: flex;
-  justify-content: space-between;
-  // flex-direction: column;
-  margin-left: 200px;
-  align-items: center;
-  width: 75%;
+  flex-direction: row;
   flex-wrap: wrap;
   font-family: "Prompt", sans-serif;
+  justify-content: space-between;
+  width: 100%;
 }
-
 .card{
   margin-top: 50px;
   border: 1px solid lightgrey;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 340px;
+  height: 390px;
+  width: 350px ;
 
+}
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .img-card {
   width: 350px; /* Set the fixed width of the card */
-  height: 200px; /* Set the fixed height of the card */
+  height: 230px; /* Set the fixed height of the card */
   overflow: hidden; /* Hide overflowing content */
   border: 1px solid #ccc; /* Optional: Add border for aesthetics */
   border-radius: 8px; /* Optional: Add border-radius for aesthetics */
@@ -61,6 +66,7 @@
 h4{
   margin-left: 15px;
   margin-top: -8px;
+  height: 10%;
 }
 .part4{
   display: flex;
@@ -87,6 +93,7 @@ h4{
 .calary{
   display: flex;
   flex-direction: row;
+  background-color: #b66056;
   margin-left: 90px;
   margin-top: 15px;
   border: 1px solid lightgrey;
@@ -95,20 +102,23 @@ h4{
   height: 30px;
   width: 90px;
   padding: 0px 1px 0px 5px;
-
-
+  cursor: pointer;
+  // box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 2px 0px;
 }
-.calimg{
-  width: 18px;
-  height: 18px;
-  margin-top: 5px;
+.calary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
+// .calimg{
+//   width: 18px;
+//   height: 18px;
+//   margin-top: 5px;
+// }
 .caltext{
   margin-left: 5px;
-  color: gray;
+  color: white;
   margin-top: 7px;
   font-size: 14px;
-  
 }
 
 @media (max-width: 1024px) {

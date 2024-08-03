@@ -1,6 +1,7 @@
 <nav id="navbar">
-    <div>
-        <div class="header" >
+
+    <div class="header">
+        <div class="logo">
             <div class="icon">
                 <ion-icon name="restaurant"></ion-icon>
             </div>
@@ -8,46 +9,62 @@
                 <span class="hed1">FOOD.</span>
                 <span class="hed2">IO</span>
             </div>
-            <div class="hamburger-menu" (click)="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+        </div>
+        <div class="hamburger-menu" (click)="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="buttonFlex">
             <ul class="ul-list" [ngClass]="{ 'active': menuOpen }">
                 <li class="navbar-item first">
-                    <span routerLink="/">Home</span>
+                    <span routerLink="/home">Home</span>
                 </li>
                 <li class="navbar-item">
                     <span routerLink="/allrecipe">Recipe</span>
                 </li>
-                <li class="navbar-item">
+                <li class="navbar-item"  *ngIf="Button2 && !isLogin">
                     <span [routerLink]="['/','add']">Add Recipe</span>
                 </li>
                 <li class="navbar-item">
-                    <span [routerLink]="['/','aboutus']">About us</span>
+                    <span [routerLink]="['/','aboutus']">About Us</span>
                 </li>
                 <li class="navbar-item">
-                    <span [routerLink]="['/','shopping']">Shopping</span>
+                    <span [routerLink]="['/','contactus']">Contact Us</span>
                 </li>
-              
+
+
                 <div class="button-container main2">
                     <button class="button login-button" routerLink="login">Login</button>
                     <button class="button signup-button" routerLink="login">Sign Up</button>
-                  </div>  
-              
+                </div>
+
             </ul>
-            <div class="button-container main" *ngIf="isLogin">
-                <button class="button login-button" [routerLink]="['/','login']" >Login</button>
-                <button class="button signup-button" [routerLink]="['/','signup']" >Sign Up</button>
-              </div> 
-              <div class="button-container main" *ngIf="!isLogin">
-                <img [src]='imgUrl' class="circular-image">
-              <div class="logout-button">
-                <span  (click)="onSignout()" class="material-symbols-outlined logout" > logout</span>
-              </div>
-              </div>                          
+            <!-- <div class="search-container">
+                <span class="material-symbols-outlined" >search </span>
+                <input type="text" [(ngModel)]="inputValue" (ngModelChange)="onChange()" class="buttonFlex" placeholder="Search...">
+            </div> -->
+
         </div>
-       
+        <div class="button-container main" *ngIf="isLogin">
+            <button class="button login-button" [routerLink]="['/','login']">Login</button>
+            <button class="button signup-button" [routerLink]="['/','signup']">Sign Up</button>
+        </div>
+        <div class="button-container main" *ngIf="!isLogin">
+            <div class="search-container">
+                <span class="material-symbols-outlined" >search </span>
+                <input type="text" [(ngModel)]="inputValue" (ngModelChange)="onChange()" (click)=" onClick()" class="buttonFlex" placeholder="Search...">
+            </div>
+            <img [src]='imgUrl' class="circular-image">
+            <div class="logout-button">
+                <span (click)="onSignout()" class="material-symbols-outlined logout"> logout</span>
+            </div>
+        </div>
     </div>
+
+
 </nav>
 
+<div style="display: none;">
+    {{userhide()}}
+</div>
