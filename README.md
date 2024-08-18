@@ -11,7 +11,7 @@
 - **Database**: SQL Server (Backend)
 - **Version Control**: GitHub (Frontend)
 
-### Admin Credentials (For Demo Purposes- Credentials Chnages Base on your Backend DatabaseEntry)
+### Admin Credentials (For Demo Purposes- Credentials changes Base on your Backend DatabaseEntry)
 - **Admin Login**:
   - **Username**: `admin@recipy.com`
   - **Password**: `Admin@1234`
