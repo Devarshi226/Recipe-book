@@ -75,7 +75,7 @@ We're here to help! If you have any questions, suggestions, or require support, 
 Thank you for choosing Recipy Booking as your go-to recipe platform. We look forward to enhancing your culinary journey! Happy cooking! 🍳🥘🌟
 
 
-## Demo Photos
+## Demo Photos - (wait for Few-Seconds to LoadUp Images)
 
 ![Home](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-home-2024-08-18-22_12_54.png)
 ![AllRecipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-allrecipe-2024-08-18-22_13_20.png)
