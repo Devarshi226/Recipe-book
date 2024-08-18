@@ -55,6 +55,21 @@ Explore the key features of Recipy Booking:
 - **Open Source Flexibility**: While our frontend is open source, we prioritize maintaining the integrity of the platform.
 - **Contact for Modifications**: Before making any changes, kindly contact the developer to maintain the quality and consistency of the project. 🍲🔒
 
+
+## Demo Photos - (wait for Few-Seconds to LoadUp Images)
+
+![Home](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-home-2024-08-18-22_12_54.png)
+![AllRecipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-allrecipe-2024-08-18-22_13_20.png)
+![individual-Recipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-recipe-2004-2024-08-18-22_18_35.png)
+![AddRecipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-add-2024-08-18-22_27_20.png)
+![Contact-Us](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-contactus-2024-08-18-22_29_35.png)
+![login](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-login-2024-08-18-22_31_39.png)
+![Signup](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/screencapture-localhost-4200-signup-2024-08-18-22_32_28.png)
+![Forgot-pass](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-forgot-2024-08-18-22_32_53.png)
+![Reset-pass](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-reset-2024-08-18-22_38_32.png)
+![Otp-Authentication](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/otp.png)
+![SwaggerUi](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/screencapture-localhost-7249-swagger-index-html-2024-08-18-22_49_58.png)
+
 ## How to Use the Platform 🖥️
 
 1. **Browsing Recipes**: Use the search feature to find recipes based on ingredients, cuisine, or cooking method. Browse through the available options and select the one that catches your eye.
@@ -73,27 +88,4 @@ We're here to help! If you have any questions, suggestions, or require support, 
 - **Address**: Ahmedabad, Gujarat 📮📞🏢
 
 Thank you for choosing Recipy Booking as your go-to recipe platform. We look forward to enhancing your culinary journey! Happy cooking! 🍳🥘🌟
-
-
-## Demo Photos - (wait for Few-Seconds to LoadUp Images)
-
-![Home](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-home-2024-08-18-22_12_54.png)
-![AllRecipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-allrecipe-2024-08-18-22_13_20.png)
-![individual-Recipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-recipe-2004-2024-08-18-22_18_35.png)
-![AddRecipe](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-add-2024-08-18-22_27_20.png)
-
-![Contact-Us](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-contactus-2024-08-18-22_29_35.png)
-
-
-![login](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-login-2024-08-18-22_31_39.png)
-![Signup](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/screencapture-localhost-4200-signup-2024-08-18-22_32_28.png)
-![Forgot-pass](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-forgot-2024-08-18-22_32_53.png)
-![Reset-pass](https://github.com/Devarshi226/Recipe-book/blob/4ca9346831c143ad04d7c43360a0a127ceb945f8/src/assets/screenshots/screencapture-localhost-4200-reset-2024-08-18-22_38_32.png)
-
-![Otp-Authentication](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/otp.png)
-
-
-![SwaggerUi](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/screencapture-localhost-7249-swagger-index-html-2024-08-18-22_49_58.png)
-
-
 © 2024 Devarshi Kathiriya (Devarshi226). All rights reserved.
