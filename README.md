@@ -74,4 +74,14 @@ We're here to help! If you have any questions, suggestions, or require support, 
 
 Thank you for choosing Recipy Booking as your go-to recipe platform. We look forward to enhancing your culinary journey! Happy cooking! 🍳🥘🌟
 
+
+## Demo Photos
+
+![Home]()
+![Signup](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/screencapture-localhost-4200-signup-2024-08-18-22_32_28.png)
+![Otp-Authentication](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/otp.png)
+
+![SwaggerUi](https://github.com/Devarshi226/Recipe-book/blob/3657c493870bb5970ea790656ab8043b9220264e/src/assets/screenshots/screencapture-localhost-7249-swagger-index-html-2024-08-18-22_49_58.png)
+
+
 © 2024 Devarshi Kathiriya (Devarshi226). All rights reserved.
