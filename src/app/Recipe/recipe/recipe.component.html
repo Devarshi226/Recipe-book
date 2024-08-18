@@ -173,7 +173,7 @@
                         <p class="like">You Might like this</p>
                     </div>
                     <div class="main-card-container">
-                        <div class="card-container" data-aos="fade-right" *ngFor="let card of recipecard; let i = index">
+                        <div class="card-container" *ngFor="let card of recipecard; let i = index">
                             <div class="card" *ngIf="i < 3">
                                 <div class="img-card">
                                     <div class="imgtag"><img src={{card.recipeImage}} alt="c1"></div>
@@ -193,7 +193,7 @@
                     <div class="recent">
                         <p>Recent Recipes</p>
                     </div>
-                    <div class="recentmain" data-aos="fade-left">
+                    <div class="recentmain">
                         <div class="RR1">
                             <div class="RRimg"><img src="../../../assets/recent1.jpg"></div>
                             <div class="RRdata">
@@ -231,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card2" data-aos="flip-right">
+                    <div class="card2">
                         <p class="c2header">Stay Connected with our Recipe updates </p>
                         <p class="c2detail">for the latest health tips and delicious recipes</p>
                         <div class="input-group">
@@ -242,7 +242,7 @@
                     <div class="recent">
                         <p>Related Recipe</p>
                     </div>
-                    <div class="related-recipe" data-aos="fade-left">
+                    <div class="related-recipe">
                         <div class="related">
                             <img src="../../../assets/recent1.jpg">
                             <p>Green Goddess wrap is a Light & Simple</p>
@@ -271,7 +271,7 @@
                     <div class="recent">
                         <p>Trending Recipes</p>
                     </div>
-                    <div class="recentmain" data-aos="fade-left">
+                    <div class="recentmain">
                         <div class="RR1">
                             <div class="RRimg"><img src="../../../assets/trend1.jpg"></div>
                             <div class="RRdata">
@@ -315,4 +315,4 @@
     </div>
 
 </body>
-<div style="margin-top:30%;"> <app-footer></app-footer></div>
+<div style="margin-top:10%;"> <app-footer></app-footer></div>
