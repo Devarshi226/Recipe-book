@@ -1,4 +1,4 @@
-# Recipy Booking - Your Ultimate Recipe Companion 🍳
+# Recipe Booking - Your Ultimate Recipe Companion 🍳
 
 ## Project Configuration ⚙️
 
