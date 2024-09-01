@@ -13,33 +13,33 @@
 
 ### Admin Credentials (For Demo Purposes- Credentials changes Base on your Backend DatabaseEntry)
 - **Admin Login**:
-  - **Username**: `admin@recipy.com`
+  - **Username**: `admin@Recipe.com`
   - **Password**: `Admin@1234`
 - **User Login**:
-- - **Username: `user@recipy.com`
+- - **Username: `user@Recipe.com`
   - **Password**: `User@1234`
 
 ---
 
-# Recipy Booking - Your Ultimate Recipe Companion 🍳
+# Recipe Booking - Your Ultimate Recipe Companion 🍳
 
-Welcome to Recipy Booking, the perfect platform for discovering and managing culinary delights. Whether you're a home cook or a professional chef, our platform provides you with detailed recipes, easy-to-follow instructions, and a seamless interface for adding and managing recipes. Whether you're here to explore new recipes or contribute your own, Recipy Booking makes it all possible! 🍽️📖
+Welcome to Recipe Booking, the perfect platform for discovering and managing culinary delights. Whether you're a home cook or a professional chef, our platform provides you with detailed recipes, easy-to-follow instructions, and a seamless interface for adding and managing recipes. Whether you're here to explore new recipes or contribute your own, Recipe Booking makes it all possible! 🍽️📖
 
 ## Table of Contents 📚
 
-- [About Recipy Booking](#about-recipy-booking)
+- [About Recipe Booking](#about-Recipe-booking)
 - [Key Features](#key-features)
-- [Why Choose Recipy Booking](#why-choose-recipy-booking)
+- [Why Choose Recipe Booking](#why-choose-Recipe-booking)
 - [How to Use the Platform](#how-to-use-the-platform)
 - [Contact Us](#contact-us)
 
-## About Recipy Booking ℹ️
+## About Recipe Booking ℹ️
 
-At Recipy Booking, we are dedicated to creating a comprehensive culinary experience. Our platform is designed to offer users access to a wide range of recipes, complete with step-by-step instructions, ingredients lists, and tips for perfecting your cooking techniques. For our admin users, we provide an easy and secure way to add new recipes directly to the platform. 🎂🥗
+At Recipe Booking, we are dedicated to creating a comprehensive culinary experience. Our platform is designed to offer users access to a wide range of recipes, complete with step-by-step instructions, ingredients lists, and tips for perfecting your cooking techniques. For our admin users, we provide an easy and secure way to add new recipes directly to the platform. 🎂🥗
 
 ## Key Features 🛠️
 
-Explore the key features of Recipy Booking:
+Explore the key features of Recipe Booking:
 
 - **Recipe Library**: Browse through a vast collection of recipes, categorized by cuisine, ingredients, and cooking techniques.
 - **Step-by-Step Instructions**: Each recipe includes detailed instructions to ensure your dishes turn out perfectly every time.
@@ -47,7 +47,7 @@ Explore the key features of Recipy Booking:
 - **Open Source Frontend**: While our frontend is open for exploration, any modifications require prior permission from the developer.
 - **Community Engagement**: Engage with other food enthusiasts by sharing your favorite recipes and tips. 🍜📚
 
-## Why Choose Recipy Booking 🌟
+## Why Choose Recipe Booking 🌟
 
 - **Comprehensive Recipe Database**: Access a wide range of recipes from various cuisines and cooking styles.
 - **Easy-to-Follow Instructions**: Our clear and concise instructions ensure success in your culinary endeavors.
@@ -87,5 +87,5 @@ We're here to help! If you have any questions, suggestions, or require support, 
 - **Developer Support**: [devu.support@gmail.com](mailto:devu.support@gmail.com)
 - **Address**: Ahmedabad, Gujarat 📮📞🏢
 
-Thank you for choosing Recipy Booking as your go-to recipe platform. We look forward to enhancing your culinary journey! Happy cooking! 🍳🥘🌟
+Thank you for choosing Recipe Booking as your go-to recipe platform. We look forward to enhancing your culinary journey! Happy cooking! 🍳🥘🌟
 © 2024 Devarshi Kathiriya (Devarshi226). All rights reserved.
